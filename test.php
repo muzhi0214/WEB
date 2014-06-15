@@ -1,7 +1,7 @@
 <html>
 <body>
 <?php
-include("array.php");
+echo $php_array[1];
 ?>
 </body>
 </html>

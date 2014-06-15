@@ -62,12 +62,10 @@
 </head>
 
 <body>
-
-<div id="main">
-<?php 
+<?php
 echo $php_array[1];
 ?>
-<form id="control">
+<div id="main">
 <fieldset>
 <legend> Chose what you want </legend> 
 <p>  
@@ -85,7 +83,7 @@ echo $php_array[1];
 
 </p>
 <p> 
-<form name="input" action="request.php" method="get">
+<form id="control" name="input" action="request.php" method="post">
 Input a username:
 <input type="text" name="user"/>
 <input type="submit" value="Send me your name!">
@@ -170,9 +168,15 @@ CollectGarbage();
 		
 </script>
 
-<script> 
+<script type="text/javascript">
 
-</script>
+    var jArray= <?php echo json_encode($phpArray ); ?>;
+
+    for(var i=0;i<6;i++){
+        alert(jArray[i]);
+    }
+
+ </script>
 
 
 </body>

@@ -1,3 +1,4 @@
 <?php
-header("location: final.html");
+include('array.php');
+include('final.php');
 ?>
