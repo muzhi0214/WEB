@@ -1,5 +1,5 @@
 <?php
 
-$php_array=("1","2","4");
+$php_array=array("1","2","4");
 
 ?>

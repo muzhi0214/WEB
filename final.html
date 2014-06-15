@@ -64,7 +64,9 @@
 <body>
 
 <div id="main">
-
+<?php 
+echo $php_array[1];
+?>
 <form id="control">
 <fieldset>
 <legend> Chose what you want </legend> 
@@ -80,11 +82,13 @@
 <p>  
 <label> Choose a date  <input type="date" />  
 </label>
+
 </p>
 <p> 
 <form name="input" action="request.php" method="get">
 Input a username:
 <input type="text" name="user"/>
+<input type="submit" value="Send me your name!">
 </p>
 </fieldset>
 </form>
@@ -121,7 +125,7 @@ Input a username:
 </div>
 
 </div>
-<?php include('array.php')?>
+
 <script type="text/javascript" src="../../src/heatmap.js"></script>
 <script type="text/javascript">
 		window.onload = function(){
